@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.box {
+  box-shadow: 5px 5px 10px rgba(192, 132, 212, 0.5);
+  padding: 10px 12px;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}
+.ml-10 {
+  margin-left: 10px;
+}
+
+.flex-align-center {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  margin: auto;
+  width: 60%;
+  flex-direction: column;
+  padding-bottom: 40px;
+}
+
+.todo {
+  margin-bottom: 10px;
+  max-width: 300px;
+}
+
+.post {
+  max-width: 300px;
+  margin-bottom: 10px;
+}
+
+.post p:nth-of-type(1) {
+  font-weight: bold;
+  font-size: 22px;
+  font-style: italic;
+}
+
+.todo:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.todo > p {
+  margin-right: 10px;
+}
+
+.empty {
+  width: 350px;
+  padding: 20px 30px;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+input {
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+input[type="checkbox"] {
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  background: #61dafb;
+  border: 2px solid black;
+  border-radius: 3px;
+}
+
+button.small {
+  padding: 5px 8px;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+  transition: 0.5s all;
+}
+
+.comment{
+  margin-bottom: 10px;
+  background-color: rgb(181, 160, 234);
+}
+
+.comments__list {
+  
+  margin-left: 40px;
+}
