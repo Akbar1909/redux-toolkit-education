@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkredux_toolkit_app=self.webpackChunkredux_toolkit_app||[]).push([[6],{3006:function(e,t,u){u.r(t);u(2791);var n=u(184);t.default=function(){return(0,n.jsx)("div",{children:"home"})}}}]);
+//# sourceMappingURL=6.16c249f8.chunk.js.map

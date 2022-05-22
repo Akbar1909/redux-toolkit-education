@@ -1,0 +1,67 @@
+[
+  {
+    "id": "1",
+    "title": "al kimyogar",
+    "description": "Al kinyogar yaxshi kitob",
+    "author": {
+      "id": "12",
+      "name": "Paul"
+    },
+    "comments": [
+      {
+        "id": "324",
+        "commenter": {
+          "id": "2",
+          "name": "G'anisher"
+        },
+        "text":"Qachon arzon bo'ladi"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "title": "ikki eshik orasi",
+    "description": "ikki eshik orasi yaxshi kitob",
+    "author": {
+      "id": "100",
+      "name": "O'tkir Hoshimov"
+    },
+    "comments": [
+      {
+        "id": "400",
+        "commenter": {
+          "id": "4",
+          "name": "Alisher"
+        },
+        "text":"Yaxshi kitob o'qib chiqqanman"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "title": "Ov qilish sirlari",
+    "description": "ov qilish sa'nati haqida",
+    "author": {
+      "id": "500",
+      "name": "Firdavs Berdiyev"
+    },
+    "comments": [
+      {
+        "id": "405",
+        "commenter": {
+          "id": "4",
+          "name": "Farxod"
+        },
+        "text":"Buni narxi yo'qmi"
+      },
+      {
+        "id": "406",
+        "commenter": {
+          "id": "12",
+          "name": "Alisher"
+        },
+        "text":"Shu kitobni o'qimoqchiman"
+      }
+    ]
+  }
+]
