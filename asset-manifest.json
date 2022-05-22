@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/redux-toolkit-education/static/css/main.0cedf714.css",
-    "main.js": "/redux-toolkit-education/static/js/main.2cc12907.js",
+    "main.js": "/redux-toolkit-education/static/js/main.85905924.js",
     "static/js/650.e1145081.chunk.js": "/redux-toolkit-education/static/js/650.e1145081.chunk.js",
     "static/js/6.16c249f8.chunk.js": "/redux-toolkit-education/static/js/6.16c249f8.chunk.js",
     "static/js/162.328df756.chunk.js": "/redux-toolkit-education/static/js/162.328df756.chunk.js",
@@ -11,7 +11,7 @@
     "static/media/logo.svg": "/redux-toolkit-education/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/redux-toolkit-education/index.html",
     "main.0cedf714.css.map": "/redux-toolkit-education/static/css/main.0cedf714.css.map",
-    "main.2cc12907.js.map": "/redux-toolkit-education/static/js/main.2cc12907.js.map",
+    "main.85905924.js.map": "/redux-toolkit-education/static/js/main.85905924.js.map",
     "650.e1145081.chunk.js.map": "/redux-toolkit-education/static/js/650.e1145081.chunk.js.map",
     "6.16c249f8.chunk.js.map": "/redux-toolkit-education/static/js/6.16c249f8.chunk.js.map",
     "162.328df756.chunk.js.map": "/redux-toolkit-education/static/js/162.328df756.chunk.js.map",
@@ -21,6 +21,6 @@
   },
   "entrypoints": [
     "static/css/main.0cedf714.css",
-    "static/js/main.2cc12907.js"
+    "static/js/main.85905924.js"
   ]
 }
