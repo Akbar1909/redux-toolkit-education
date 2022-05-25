@@ -106,3 +106,12 @@ button:hover {
   
   margin-left: 40px;
 }
+
+
+.home__page img{
+  width:700px;
+  height:500px;
+  margin:auto;
+  object-fit: cover;
+  display: block;
+}

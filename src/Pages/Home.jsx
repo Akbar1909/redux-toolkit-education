@@ -1,9 +1,9 @@
 import React from 'react';
-
+import GifLearn from '../Assets/Gifs/learn.gif';
 const Home = () => {
     return (
-        <div>
-            home
+        <div className="home__page">
+            <img src={GifLearn} alt="" />
         </div>
     );
 }

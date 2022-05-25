@@ -16,17 +16,17 @@ const BooksPage = lazy(() => import("./Pages/Books"));
 function App() {
   return (
     <BrowserRouter>
-       <Suspense lazy={<div>Loading...</div>}>
-       <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<HomePage />} />
-          <Route path="counter" element={<CounterPage />} />
-          <Route path="todos" element={<TodosPage />} />
-          <Route path="posts" element={<PostsPage />} />
-          <Route path="books" element={<BooksPage />} />
-        </Route>
-      </Routes>
-       </Suspense>
+      <Suspense lazy={<div>Loading...</div>}>
+        <Routes>
+          <Route path="/redux-toolkit-education" element={<Layout />}>
+            <Route index element={<HomePage />} />
+            <Route path="counter" element={<CounterPage />} />
+            <Route path="todos" element={<TodosPage />} />
+            <Route path="posts" element={<PostsPage />} />
+            <Route path="books" element={<BooksPage />} />
+          </Route>
+        </Routes>
+      </Suspense>
     </BrowserRouter>
   );
 }

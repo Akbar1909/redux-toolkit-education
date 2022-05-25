@@ -12,7 +12,6 @@ const Posts = () => {
     dispatch(fetchPostsList());
   }, []);
 
-  console.log(postsState);
 
   function _renderLoading() {
     return <h2>Olib kelyapmiz..., Sabr qiling..🥱</h2>;
