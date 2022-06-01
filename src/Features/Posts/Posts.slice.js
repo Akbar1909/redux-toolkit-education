@@ -1,14 +1,8 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-import { getPostsList } from "../../Data/Provider/PostProvider";
-// First, create the thunk
-export const fetchPostsList = createAsyncThunk(
-  "posts/getPostsList",
-  async () => {
-    const response = await getPostsList();
 
-    return response.data;
-  }
-);
+// First, create the thunk
+import {  fetchPostsList } from './Posts.middleware';
+
 
 // Then, handle actions in your reducers:
 const postsSlice = createSlice({

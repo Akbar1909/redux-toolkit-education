@@ -12,6 +12,8 @@ const Comment = ({ comment, authorName, onDelete }) => {
 
   const onToggle = () => setIsOpen(!isOpen);
 
+  console.log(comment)
+
   return (
     <div className="box comment">
       <p>{comment.text}</p>

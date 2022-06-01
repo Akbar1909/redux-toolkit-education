@@ -52,7 +52,7 @@ const Books = () => {
 
           <div className="comments__list">
             {book.comments.map((commentId) => {
-              let comment = get(comments, `${commentId}`, { id: 3 });
+              let comment = get(comments, `${commentId}`);
 
               return (
                 <Comment

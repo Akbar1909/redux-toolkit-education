@@ -1,9 +1,9 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchPostsList } from "../Features/Posts/Posts.slice";
+import { fetchPostsList } from "../Features/Posts/Posts.middleware";
 const Posts = () => {
   const dispatch = useDispatch();
-
+  const [container, setContainer] = useState(null);
   const postsState = useSelector((state) => state.postsState);
 
   const { entities, status, reason } = postsState;
@@ -11,6 +11,10 @@ const Posts = () => {
   useEffect(() => {
     dispatch(fetchPostsList());
   }, []);
+
+
+
+ 
 
 
   function _renderLoading() {
@@ -33,14 +37,24 @@ const Posts = () => {
     ));
   }
 
+
+  if(status === 'pending') return _renderLoading()
+
   return (
-    <div className="container flex-align-center">
+    <section style={{display:"flex",}}>
+    <div ref={setContainer} className="container flex-align-center">
       {status === "error"
         ? _renderError()
         : status === "pending"
         ? _renderLoading()
         : _renderSuccess()}
     </div>
+
+    <div style={{width:"100px", height:`${container?.clientHeight}px`, background:"red"}}>
+ 
+    </div>
+
+    </section>
   );
 };
 

@@ -9,6 +9,7 @@ import { deleteComment as deleteAction } from "./Books.actions";
 import { deleteComment as selfDeleteComment } from "../Comments/Commenter.actions";
 
 const user = new schema.Entity("users");
+
 const comment = new schema.Entity("comments", {
   commenter: user,
 });
@@ -28,6 +29,8 @@ export const fetchBooksList = createAsyncThunk(
     const { data } = await getBooksList();
 
     const { entities, result } = normalize(data, booksSchema);
+
+    console.log(entities);
 
     return entities;
   }

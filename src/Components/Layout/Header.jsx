@@ -6,7 +6,7 @@ const Header = () => {
       <nav>
         <ul>
           <li>
-            <Link to="/redux-toolkit-education">Home</Link>
+            <Link to="/">Home</Link>
           </li>
           <li>
             <Link to="counter">Counter</Link>
@@ -20,6 +20,11 @@ const Header = () => {
           <li>
           <Link to="books">Books</Link>
           </li>
+          <li>
+          <Link to="photos">Photos</Link>
+          </li>
+
+          
         </ul>
       </nav>
     </header>

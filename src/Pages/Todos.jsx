@@ -22,7 +22,9 @@ const Todos = () => {
   };
 
   const onCreateTodo = (e) => {
+    debugger;
     dispatch(createTodo(formValues));
+    debugger;
     setFormValues(defaultFormValues);
   };
 

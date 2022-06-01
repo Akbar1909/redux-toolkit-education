@@ -115,3 +115,12 @@ button:hover {
   object-fit: cover;
   display: block;
 }
+
+.photo--form{
+  display:flex;
+  flex-direction: column;
+}
+
+.photo--form input, .photo--form textarea{
+  margin-bottom: 10px;
+}

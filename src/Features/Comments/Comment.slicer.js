@@ -18,6 +18,7 @@ export const slice = createSlice({
 
     builder.addCase(editComment.type, (state, action) => {
       commentsAdapter.upsertOne(state, action.payload);
+     
     });
 
     builder.addCase(deleteComment.type, (state, action) => {

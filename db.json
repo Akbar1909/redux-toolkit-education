@@ -1,0 +1,82 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "photos": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode",
+      "url": "https://store-images.s-microsoft.com/image/apps.35312.13510798882979142.2285714e-7209-46cb-85e6-9d458b44c5d3.bb547b33-30cd-48b0-bfd8-ce9dbcaba77e?mode=scale&q=90&h=300&w=300"
+    },
+    {
+      "title": "12312313",
+      "url": "121",
+      "id": 2
+    },
+    {
+      "title": "12312313",
+      "url": "121fewf",
+      "id": 3
+    },
+    {
+      "title": "12312313",
+      "url": "121fewf",
+      "id": 4
+    },
+    {
+      "title": "12312313",
+      "url": "121fewf",
+      "id": 5
+    },
+    {
+      "title": "tests",
+      "url": "edewffwefef",
+      "id": 6
+    },
+    {
+      "title": "1321313",
+      "url": "312123",
+      "id": 7
+    },
+    {
+      "title": "test",
+      "url": "test",
+      "id": 8
+    },
+    {
+      "title": "1212",
+      "url": "1212",
+      "id": 9
+    },
+    {
+      "title": "",
+      "url": "",
+      "id": 10
+    },
+    {
+      "title": "2312",
+      "url": "12",
+      "id": 11
+    },
+    {
+      "title": "Random image",
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTScg9Y4aqOv3yWvsAWBrLZOvRJxH4Q3VI-Zg&usqp=CAU",
+      "id": 12
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
