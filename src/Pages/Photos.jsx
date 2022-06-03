@@ -1,7 +1,8 @@
-import React, { useDeferredValue, useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useQuery, useMutation, useQueryClient } from "react-query";
-import axios from "axios";
+
 import { Link } from "react-router-dom";
+import TestDemo from "../Components/Molecules/TestDemo";
 
 import { getPhotosList, createPhoto } from "../Data/Provider/PhotoProvider";
 
@@ -16,8 +17,6 @@ export default function Photos() {
   const photosState = useQuery("photos", getPhotosList, {
     enabled: true,
   });
-
- 
 
   const onHandleChange = (e) =>
     setValues((prevV) => ({ ...prevV, [e.target.name]: e.target.value }));
@@ -41,21 +40,23 @@ export default function Photos() {
   return (
     <div className="container flex-align-center">
       {photosState.data.data.map((photo) => (
-        <p>
+        <p key={photo.id}>
           <Link to={`/photos/${photo.id}`}>{photo.title}</Link>
         </p>
       ))}
 
       <div className="photo--form">
-        <textarea
-          rows="10"
-          type="text"
-          name="title"
-          onChange={onHandleChange}
-        />
+        <textarea rows="10" cols="40" type="text" name="title" onChange={onHandleChange} />
         <input type="text" name="url" onChange={onHandleChange} />
-        <button onClick={() => createMutate.mutate(values)}>Create</button>
+        <button
+          onClick={() => {
+            if (values.title === "") return;
+            createMutate.mutate(values);
+          }}>
+          Create
+        </button>
       </div>
+      <TestDemo />
     </div>
   );
 }
