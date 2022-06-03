@@ -3,7 +3,7 @@ import {
     useMutation,
     useQueryClient,
     QueryClient,
-
+    QueryClientProvider,
   } from 'react-query'
 
    // Create a client
