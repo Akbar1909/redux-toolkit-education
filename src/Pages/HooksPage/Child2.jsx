@@ -1,17 +1,18 @@
-import React,{useEffect, memo} from 'react';
+import React, { useEffect, memo, useContext } from "react";
 
-const Child2 = ({lastName,onUpdateLastName}) => {
+import { CounterContext } from "./Hooks";
 
+const Child2 = ({ onUpdateLastName }) => {
+  const { dispatch, value, lastName } = useContext(CounterContext);
 
-    // useEffect(() => {
-    //     console.log("child 2 render")
-    // });
+  return (
+    <div>
+      <b>value: {value} {lastName}</b>
 
-    return (
-        <div>
-            child 2 {lastName}
-        </div>
-    );
-}
+      <button onClick={() => dispatch({ type: "INCREMENT" })}>Increment</button>
+      <button onClick={() => dispatch({ type: "DECREMENT" })}>Decrement</button>
+    </div>
+  );
+};
 
 export default memo(Child2);
