@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect,useLayoutEffect } from "react";
 import { useQuery, useMutation, useQueryClient } from "react-query";
 
 import { Link } from "react-router-dom";
@@ -14,6 +14,7 @@ export default function Photos() {
     url: "",
   });
 
+  
   const photosState = useQuery("photos", getPhotosList, {
     enabled: true,
   });
@@ -35,15 +36,15 @@ export default function Photos() {
     },
   });
 
-  if (photosState.isLoading) return <h1>Loading....</h1>;
+  // if (photosState.isLoading) return <h1>Loading....</h1>;
 
   return (
     <div className="container flex-align-center">
-      {photosState.data.data.map((photo) => (
+      {/* {photosState.data.data.map((photo) => (
         <p key={photo.id}>
           <Link to={`/photos/${photo.id}`}>{photo.title}</Link>
         </p>
-      ))}
+      ))} */}
 
       <div className="photo--form">
         <textarea rows="10" cols="40" type="text" name="title" onChange={onHandleChange} />
@@ -60,3 +61,4 @@ export default function Photos() {
     </div>
   );
 }
+

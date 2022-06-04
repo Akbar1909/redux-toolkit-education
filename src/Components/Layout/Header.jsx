@@ -23,6 +23,9 @@ const Header = () => {
           <li>
           <Link to="photos">Photos</Link>
           </li>
+          <li>
+          <Link to="hooks">Hooks</Link>
+          </li>
 
           
         </ul>

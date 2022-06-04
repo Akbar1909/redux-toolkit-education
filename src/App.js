@@ -13,8 +13,8 @@ const TodosPage = lazy(() => import("./Pages/Todos"));
 const PostsPage = lazy(() => import("./Pages/Posts"));
 const BooksPage = lazy(() => import("./Pages/Books"));
 const UsersPage = lazy(() => import("./Pages/Photos"));
-const PhotoFullInfoPage = lazy(() => import("./Pages/PhotoFullInfo"));
-
+const PhotoFullInfoPage = lazy(() => import("./Pages/PhotofullInfoPage/PhotofullInfoPage"));
+const HooksPage=lazy(()=>import("./Pages/HooksPage/Hooks"));
 
 const ConvertJsonToJsxPage=lazy(()=>import("./Pages/ConvertJsonToJsx"));
 
@@ -30,6 +30,7 @@ function App() {
             <Route path="posts" element={<PostsPage />} />
             <Route path="books" element={<BooksPage />} />
             <Route path="photos" element={<UsersPage />} />
+            <Route path="hooks" element={<HooksPage />} />
             <Route path="photos/:albumId" element={<PhotoFullInfoPage />} />
           </Route>
         </Routes>

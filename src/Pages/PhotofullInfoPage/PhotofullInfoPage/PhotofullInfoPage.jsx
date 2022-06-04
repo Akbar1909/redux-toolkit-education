@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import { useQuery, useMutation, useQueryClient } from "react-query";
 import { useParams, useNavigate } from "react-router-dom";
 
-import { getPhoto } from "../Data/Provider/PhotoProvider";
+import { getPhoto } from "Data/Provider/PhotoProvider";
 
-import { deletePhoto, updatePhoto } from "../Data/Provider/PhotoProvider";
+import { deletePhoto, updatePhoto } from "Data/Provider/PhotoProvider";
+import useRemovePhoto from '../_hooks/useRemovePhoto';
+import useUpdatePhoto from "../_hooks/useUpdatePhoto"
 
 export default function PhotoFullInfo() {
   const [isUpdating, setUpdate] = useState(false);
@@ -15,31 +17,18 @@ export default function PhotoFullInfo() {
   const { albumId } = useParams();
   const navigate = useNavigate();
 
-  
-
-
   const photoState = useQuery(
     ["photos", albumId],
     async () => await getPhoto(albumId)
   );
 
-  const removePhoto = useMutation(deletePhoto, {
-    onSuccess: () => {
-      navigate("/photos", { replace: true });
-    },
-    onError: () => console.log("error remove"),
-  });
+  const removePhoto = useRemovePhoto();
+  const updateMutation = useUpdatePhoto({
+      onSuccess:(response)=>{},
+      onError:(error)=>{}
+  })
 
-  const updateMutation = useMutation(updatePhoto, {
-    onSuccess: (response) => {
-      setUpdate(false);
-      queryClient.setQueryData(
-        ["photos", photoState.data.data.id],
-        (old) => response.data
-      );
-    },
-    onError: () => console.log("error update"),
-  });
+
 
   if (photoState.isLoading) return <h1>Getting photo...</h1>;
 

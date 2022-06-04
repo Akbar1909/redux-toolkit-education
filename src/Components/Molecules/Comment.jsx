@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 import {
   editComment,
   deleteComment,
-} from "../../Features/Comments/Commenter.actions";
+} from "Features/Comments/Commenter.actions";
 const Comment = ({ comment, authorName, onDelete }) => {
   const dispatch = useDispatch();
 
