@@ -1,0 +1,4 @@
+build website:
+  script:
+    - npm install
+    - npm build
